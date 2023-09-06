@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="public/Icon_Anonymous_ᗰ𝙰ļ𝕝𐍈ℝ𐍅.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Checkout Page </title>
+  </head>
+  <body class="max-w-[1440px] w-full p-4 mt-8 mx-auto items-center">
+    <header class="text-2xl lg:text-4xl">
+      Checkout
+    </header>
+
+    <main class="lg:flex lg:justify-between lg:flex-row-reverse mt-[50.94px]">
+      <div class="rounded-xl bg-[#F2F2F2] w-[350px] lg:w-[383px] h-[489px] lg:h-[535px] p-6 lg:p-8 pb-4 lg:pb-3">
+        <div class="flex">
+          <img src="public/photo1.png" class="max-w-[122.753px] lg:max-w-[1134.206px] h-[124.644px] lg:h-[136.274px] mr-[26.87px] lg:mr-[20.19px] rounded-[13px]" alt="Vintage Backbag">
+          <div class="relative rotate-[-0.02deg]">
+            <p class="text-xs lg:text-base  text-[#4E5150]">Vintage Backbag</p>
+            <p class="text-sm lg:text-base text-[#F2994A] mt-[5.49px] lg:mt-[8.82px]">$54.99 <span class="text-[10px] lg:text-xs text-[#4E5150] line-through">$94.99</span></p>
+            <div class="flex justify-between w-[122.797px] lg:w-[134.254px] h-[49.857px] lg:h-[52px] items-center px-2 absolute bottom-0 rounded-xl border border-neutral-600">
+              <button class="w-[22.159px] lg:w-[24.226px] h-[22.159px] lgh-[24.226px] bg-neutral-600/10 " id="decrement">-</button>
+              <p id="compte">01</p>
+              <button class="w-[22.159px] lg:w-[24.226px] h-[22.159px] lgh-[24.226px] bg-neutral-600/10" id="increment">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="flex mt-[28.64px] lg:mt-12">
+          <img src="public/photo2.png" class="max-w-[122.753px] lg:max-w-[1134.206px] h-[124.644px] lg:h-[136.274px] mr-[26.87px] lg:mr-[20.19px] rounded-[13px]" alt="Vintage Backbag">
+          <div class="relative rotate-[-0.02deg]">
+            <p class="text-xs lg:text-base  text-[#4E5150]">Levi Shoes</p>
+            <p class="text-sm lg:text-base text-[#F2994A] mt-[5.49px] lg:mt-[8.82px]">$74.99 <span class="text-[10px] lg:text-xs text-[#4E5150] line-through">$124.99</span></p>
+            <div class="flex justify-between w-[122.797px] lg:w-[134.254px] h-[49.857px] lg:h-[52px] items-center px-2 absolute bottom-0 rounded-xl border border-neutral-600">
+              <button class="w-[22.159px] lg:w-[24.226px] h-[22.159px] lgh-[24.226px] bg-neutral-600/10 sous">-</button>
+              <p class="num">01</p>
+              <button class="w-[22.159px] lg:w-[24.226px] h-[22.159px] lgh-[24.226px] bg-neutral-600/10 add">+</button>
+            </div>
+          </div>
+        </div>
+        <hr class="border mt-[86.79px] lg:mt-[95.24px]">
+        <div class="flex justify-between text-sm">
+          <p class="lg:text-lg text-black/80">Shipping</p>
+          <span class="m-1 shipping">$19</span>
+        </div>
+        <hr class="border lg:mt-[2.61px]">
+        <div class="flex justify-between text-sm mt-[11.95px] lg:mt-[12.36px]">
+          <p class="lg:text-lg text-black/80">Total</p>
+          <span id="total">$148.98</span>
+        </div>
+      </div>
+
+      <form class="relative mt-[39px] lg:mt-0 w-[349.249px] lg:w-[465px]" id="form">
+        <p class="titre"> Contact infomation</p>
+        <div class="">
+          <p class="text">E-mail</p>
+          <div class="input inEmail">
+            <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="#828282" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5l-8-5V6l8 5l8-5v2z"/>
+            </svg>
+            <input type="email" name="email" placeholder="Enter your email..." class="input-text" id="email">
+          </div>
+          <label class="error">Email is required </label>
+          <label class="error">
+            Please provide a valid email address.
+          </label>
+        </div>
+        <div class="">
+          <p class="text">Phone</p>
+          <div class="input inPhone">
+            <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="#828282" d="M19.95 21q-3.125 0-6.175-1.363t-5.55-3.862q-2.5-2.5-3.862-5.55T3 4.05q0-.45.3-.75t.75-.3H8.1q.35 0 .625.238t.325.562l.65 3.5q.05.4-.025.675T9.4 8.45L6.975 10.9q.5.925 1.187 1.787t1.513 1.663q.775.775 1.625 1.438T13.1 17l2.35-2.35q.225-.225.588-.338t.712-.062l3.45.7q.35.1.575.363T21 15.9v4.05q0 .45-.3.75t-.75.3Z"/>
+            </svg>
+            <input type="tel" name="phone" placeholder="Enter your phone..." class="input-text" id="phone">
+          </div>
+          <div class="error">Phone is required</div>
+        </div>
+        <p class="titre mt-[58.01px]">Shipping address</p>
+        <div class="">
+          <p class="text">Full name</p>
+          <div class="input inFullname">
+            <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="#828282" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm0 14c-2.03 0-4.43-.82-6.14-2.88a9.947 9.947 0 0 1 12.28 0C16.43 19.18 14.03 20 12 20z"/>
+            </svg>
+            <input type="text" name="fullname" placeholder="Rodney Cotton" class="text-base text-black/80 appearance-none outline-none" id="fullname">
+          </div>
+          <div class="error">Name is required</div>
+        </div>
+        <div class="">
+          <p class="text">Address</p>
+          <div class="input inAddress">
+            <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="#828282" d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z"/>
+            </svg>
+            <input type="text" name="address" placeholder="Your address.." class="input-text" id="address">
+          </div>
+          <div class="error">Address is required</div>
+        </div>
+        <div class="">
+          <p class="text">City</p>
+          <div class="input inCity">
+            <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="#828282" d="M3 21V7h6V5l3-3l3 3v6h6v10H3Zm2-2h2v-2H5v2Zm0-4h2v-2H5v2Zm0-4h2V9H5v2Zm6 8h2v-2h-2v2Zm0-4h2v-2h-2v2Zm0-4h2V9h-2v2Zm0-4h2V5h-2v2Zm6 12h2v-2h-2v2Zm0-4h2v-2h-2v2Z"/>
+            </svg>
+            <input required type="text" name="city" placeholder="Your city.." class="input-text" id="city">
+          </div>
+          <div class="error">City is required</div>
+        </div> 
+        <div class="flex">
+          <div class="">
+            <p class="text">Country</p>
+            <div class="flex h-14 border-neutral-600 rounded-xl mt-[7px] border items-center w-[162.983px] lg:w-[217px] inCountry">
+              <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="#828282" d="M12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Zm-1-2.05V18q-.825 0-1.413-.588T9 16v-1l-4.8-4.8q-.075.45-.138.9T4 12q0 3.025 1.988 5.3T11 19.95Zm6.9-2.55q.5-.55.9-1.188t.662-1.325q.263-.687.4-1.412T20 12q0-2.45-1.363-4.475T15 4.6V5q0 .825-.588 1.413T13 7h-2v2q0 .425-.288.713T10 10H8v2h6q.425 0 .713.288T15 13v3h1q.65 0 1.175.388T17.9 17.4Z"/>
+              </svg>
+              <input required type="text" name="country" placeholder="Your country.." class="input-text w-24 lg:w-36" id="country">
+            </div>
+            <div class="error">Country is required</div>
+          </div>
+          <div class="ml-[31px]">
+            <p class="text">Postal code</p>
+            <div class="flex h-14 border-neutral-600 rounded-xl mt-[7px] border items-center w-[162.983px] lg:w-[217px] inPostal">
+              <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="#828282" d="M4 22q-.825 0-1.413-.588T2 20V10q0-.825.588-1.413T4 8h2V2h8v4H8v8h2V8h10q.825 0 1.413.588T22 10v10q0 .825-.588 1.413T20 22H4Z"/>
+              </svg>
+              <input required type="text" name="postal" placeholder="Your postal code.." class="input-text w-24 lg:w-36" id="postal">
+            </div>
+            <div class="error">Postal code is required</div>
+          </div>
+        </div>
+        <div class="flex items-center mt-5">
+          <input required type="checkbox" name="save" class="aspect-square w-[21px] rounded-[4px] border border-neutral-600">
+          <p class="text-[10px] lg:text-xs text-black/60 ml-[11px]">Save this information for next time</p>
+        </div>
+        <button type="submit" class="absolute right-0 w-[166px] h-[54px] text-white text-base bg-[#F2994A] rounded-xl text-center py-[17px]">Continue</button> 
+      </form>
+    </main>
+
+    <footer class="flex justify-center mt-32">
+      <div class="text-xs sm:text-sm font-footer text-neutral-500">
+        created by
+        <a href="https://github.com/Lenaic-ouendo-01/interior-consultant.git">
+          <span class="font-bold text-neutral-400 text-sm">_ᗰ𝙰ļ𝕝𐍈ℝ𐍅</span>
+        </a>-devChallenges.io
+      </div>
+    </footer>
+
+    <script>
+      //Selection des éléments(querySelector) du document(document.) grace au nom de l'identifiant 
+      const add = document.querySelector("#increment");
+      const sous = document.querySelector("#decrement")
+      const num = document.querySelector("#compte");
+      let counter = 1;
+      
+      //Selection des éléments(querySelector) du document(document.) grace au nom de la class
+      const increment = document.querySelector(".add");
+      const decrement = document.querySelector(".sous")
+      const compte = document.querySelector(".num");
+      let count = 1;
+      
+      const total = document.querySelector("#total");
+      const shipping = document.querySelector(".shipping");
+      let montant = 148.98;
+
+      //L'evenement click sur le button add qui n'est rien d'autre que la selection de l'élément dont l'id est increment et qu'on définit un peu plus haut déclenche la fonction 
+      //anonyme qui quant à elle incrémente le compteur préalablement définit. Lors que la valeur du compteur est inférieur à 0, on lui ajoute un 0 au début de son écriture pour lui donner 
+      //l'aspect 01 au lieu de 1. Tout ceci fini, on affiche dans la balise (innerHTML) dont l'élément a été selectionne au préalable et stocker dans la variable add, la valeur du compteur.
+      //C'est grace à cela que le numero change à chaque click.
+      add.addEventListener("click", ()=>{
+        counter++;
+        counter = (counter < 10) ? "0" + counter : counter;
+        
+        num.innerHTML = `${counter}`
+
+        //Lors que le montant afficher est egal a 0, lors de l'incrémentation, on ajoute au montant total les frais de la livraison 
+        //car s'il n'y a pas de produit à livrer il ne peut pas y avoir de frais de livraison et ces frais ne sont pris en compte qu'une seule fois
+        if (montant == 0.00) {
+          montant = montant + 54.99 + 19
+          total.innerHTML = `$ ${montant.toFixed(2)}`
+        } else {
+          montant = montant + 54.99
+          total.innerHTML = `$ ${montant.toFixed(2)}`
+        }
+
+        //Mise à jour de l'affichage de la valeur des frais de livraisons
+        shipping.innerHTML = `$19`
+      });
+
+      sous.addEventListener("click", ()=>{
+        if (counter > 0 ) {
+          counter--;
+          counter = (counter < 10) ? "0" + counter : counter;
+          
+          num.innerHTML = `${counter}`
+          montant = montant - 54.99
+
+          //Lors que le montant total afficher est egale à 19 cela signifie que tous les produit ont été retirer et que le panier est vide ce qui déclenche la mise à jour de la valeur des frais de livraison à 0
+          if ((montant.toFixed(2)) == 19) {
+            montant = 0.00;
+            shipping.innerHTML = `$0`
+            //Arrondissement à n chiffres prêt (.toFixed(n))
+            total.innerHTML = `$ ${montant.toFixed(2)}`
+          } else{
+            shipping.innerHTML = `$19`
+            total.innerHTML = `$ ${montant.toFixed(2)}`
+          }
+        }
+      });
+
+      increment.addEventListener("click", ()=>{
+        count++;
+        count = (count < 10) ? "0" + count : count;
+        
+        compte.innerHTML = `${count}`
+
+        if (montant == 0.00) {
+          montant = montant + 74.99 + 19
+          total.innerHTML = `$ ${montant.toFixed(2)}`
+        } else {
+          montant = montant + 74.99
+          total.innerHTML = `$ ${montant.toFixed(2)}`
+        }
+
+        shipping.innerHTML = `$19`
+      });
+
+      decrement.addEventListener("click", ()=>{
+        if (count > 0 ) {
+          count--;
+          count = (count < 10) ? "0" + count : count;
+          
+          compte.innerHTML = `${count}`
+          montant = montant - 74.99
+
+          if ((montant.toFixed(2)) == 19) {
+            montant = 0.00;
+            shipping.innerHTML = `$0`
+            total.innerHTML = `$ ${montant.toFixed(2)}`
+          } else{
+            shipping.innerHTML = `$19`
+            total.innerHTML = `$ ${montant.toFixed(2)}`
+          }
+        }
+      });
+    
+      //********************************** Section de validation de données **********************************//  
+      const form = document.getElementById("form");
+      const email = document.getElementById("email");
+      const phone = document.getElementById("phone");
+      const fullname = document.getElementById("fullname");
+      const address = document.getElementById("address");
+      const city = document.getElementById("city");
+      const country = document.getElementById("country");
+      const postal = document.getElementById("postal");
+
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        
+        validateInputs();
+      });
+
+      const setError = (element, message) => {
+        const inputControl = element.parentElement;
+        const errorDisplay = inputControl.querySelector('.error');
+
+        errorDisplay.innerHTML = message;
+        inputControl.classList.add('error');
+        inputControl.classList.remove('success')
+      };
+
+      const setSuccess = element => {
+        const inputControl = element.parentElement;
+        const errorDisplay = inputControl.querySelector('.error');
+
+        errorDisplay.innerHTML = '';
+        inputControl.classList.add('success');
+        inputControl.classList.remove('error')
+      };
+
+      const isValidEmail = email => {
+        const re = /^((^[<>()[\]\\.,;:\s@"]+(\.[^<>([\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+      }
+
+      const validateInputs = () => {
+        const emailValue = email.value.trim();
+        const phoneValue = phone.value.trim();
+        const fullnameValue = fullname.value.trim();
+        const addressValue = address.value.trim();
+        const cityValue = city.value.trim();
+        const countryValue = country.value.trim();
+        const postalValue = postal.value.trim();
+
+        if(fullnameValue === "") {
+          setError(fullname, "Name is required");
+        } else {
+          setSuccess(fullname)
+        }
+
+        if (emailValue === '') {
+          setError(email, 'Email is required');
+        } else if(!isValidEmail(emailValue)) {
+          setError(email, 'Please provide a valid email address.');
+        } else {
+          setSuccess(email);
+        }
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      var inEmail = document.querySelector(".inEmail");
+      var inPhone = document.querySelector(".inPhone");
+      var inFullname = document.querySelector(".inFullname");
+      var inAddress = document.querySelector(".inAddress");
+      var inCity = document.querySelector(".inCity");
+      var inCountry = document.querySelector(".inCountry");
+      var inPostal = document.querySelector(".inPostal");
+
+      inEmail.classList.toggle('success')
+      inEmail.classList.toggle('error')
+
+      inPhone.classList.toggle('success')
+      inPhone.classList.toggle('error')
+
+      inFullname.classList.toggle('success')
+      inFullname.classList.toggle('error')
+
+      inAddress.classList.toggle('success')
+      inAddress.classList.toggle('error')
+
+      inCity.classList.toggle('success')
+      inCity.classList.toggle('error')
+
+      inCountry.classList.toggle('success')
+      inCountry.classList.toggle('error')
+
+      inPostal.classList.toggle('success')
+      inPostal.classList.toggle('error')
+
+    </script>
+  </body>
+</html>
