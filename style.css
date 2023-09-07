@@ -21,15 +21,15 @@
 }
 
 .text{
-  @apply text-xs lg:text-[10px] text-black/60 mt-5;
+  @apply lg:text-xs text-[10px] text-black/60 mt-5;
 }
 
 .titre{
-  @apply text-lg lg:text-sm text-black/80;
+  @apply lg:text-lg text-sm text-black/80;
 }
 
 .input-text{
-  @apply text-base lg:text-xs text-black/80 border-0 appearance-none outline-none;
+  @apply lg:text-base text-xs text-black/80 border-0 appearance-none outline-none;
 }
 
 :root{
@@ -85,6 +85,4 @@
   @apply ring-2 ring-red-300; 
 }
 
-.error{
-  @apply mt-2 invisible text-red-600 text-sm;
-}
+
