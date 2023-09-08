@@ -33,7 +33,7 @@
 }
 
 :root{
-  @apply font-family font-semibold;
+  @apply font-body font-semibold;
 }
 
 .inEmail.success{

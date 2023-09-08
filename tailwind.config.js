@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        'family' : "Montserrat"
+        'body' : "Montserrat"
       }
     },
   },
