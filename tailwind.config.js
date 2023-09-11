@@ -8,8 +8,15 @@ export default {
     extend: {
       fontFamily:{
         'body' : "Montserrat"
+      },
+      
+      screens: {
+        dm: '900px',
+        ms: '344px',
+        bt: '402px'
       }
     },
+
   },
   plugins: [],
 }
